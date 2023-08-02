@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fun with audio</title>
+    <link rel="icon" type///??????////="image/x-icon" href="./favicon.ico" />
+    <script
+      async
+      src="https://unpkg.com/es-module-shims@1.6.3/dist/es-module-shims.js"
+    ></script>
+    <style>
+      body {
+        margin: 0;
+        width: 100vw;
+        height: 100vh;
+        overflow: hidden;
+      }
+
+      svg {
+        max-height: 100%;
+        position: absolute;
+      }
+    </style>
+  </head>
+
+  <body>
+    <svg
+      width="100%"
+      height="100%"
+      preserveAspectRatio="xMidYMid slice"
+      viewBox="0 0 1080 1920"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <rect
+        x="162"
+        y="1228"
+        width="108"
+        height="106.667"
+        fill="#F3DAA7"
+        class="square"
+      />
+      <rect
+        x="376"
+        y="158"
+        width="108"
+        height="108"
+        rx="54"
+        fill="#DBBDBD"
+        class="circle"
+      />
+      <rect
+        x="162"
+        y="586"
+        width="108"
+        height="108"
+        rx="54"
+        fill="#DBBDBD"
+        class="circle"
+      />
+      <rect
+        x="376"
+        y="1656"
+        width="108"
+        height="108"
+        rx="54"
+        fill="#DBBDBD"
+        class="circle"
+      />
+      <rect
+        x="162"
+        y="372"
+        width="108"
+        height="106.667"
+        fill="#F3DAA7"
+        class="square"
+      />
+      <rect
+        x="376"
+        y="1014"
+        width="108"
+        height="106.667"
+        fill="#F3DAA7"
+        class="square"
+      />
+      <rect
+        x="594"
+        y="158"
+        width="108"
+        height="106.667"
+        fill="#F3DAA7"
+        class="square"
+      />
+      <rect
+        x="376"
+        y="800"
+        width="108"
+        height="106.667"
+        rx="53.3333"
+        fill="#DBBDBD"
+        class="circle"
+      />
+      <rect
+        x="594"
+        y="1228"
+        width="108"
+        height="106.667"
+        rx="53.3333"
+        fill="#DBBDBD"
+        class="circle"
+      />
+      <rect
+        x="594"
+        y="373"
+        width="108"
+        height="106.667"
+        rx="53.3333"
+        fill="#DBBDBD"
+        class="circle"
+      />
+      <rect
+        x="808"
+        y="1014"
+        width="108"
+        height="106.667"
+        fill="#F3DAA7"
+        class="square"
+      />
+      <rect
+        x="808"
+        y="1442"
+        width="108"
+        height="106.667"
+        fill="#F3DAA7"
+        class="square"
+      />
+      <rect
+        x="594"
+        y="1656"
+        width="108"
+        height="106.667"
+        fill="#F3DAA7"
+        class="square"
+      />
+      <rect
+        x="808"
+        y="586"
+        width="108"
+        height="106.667"
+        fill="#F3DAA7"
+        class="square"
+      />
+      <rect
+        x="162"
+        y="800"
+        width="108"
+        height="106.667"
+        fill="#F3DAA7"
+        class="square"
+      />
+      <rect
+        x="376"
+        y="1442"
+        width="108"
+        height="106.667"
+        rx="53.3333"
+        fill="#DBBDBD"
+        class="circle"
+      />
+      <path
+        d="M430 373L482.828 478H377.172L430 373Z"
+        fill="#6989A8"
+        class="triangle"
+      />
+      <path
+        d="M430 1228L482.828 1333H377.172L430 1228Z"
+        fill="#6989A8"
+        class="triangle"
+      />
+      <path
+        d="M216 1656L268.828 1761H163.172L216 1656Z"
+        fill="#6989A8"
+        class="triangle"
+      />
+      <path
+        d="M862 800L914.828 905H809.172L862 800Z"
+        fill="#6989A8"
+        class="triangle"
+      />
+      <path
+        d="M648 788L709.819 832.914L686.206 905.586H609.794L586.181 832.914L648 788Z"
+        fill="#A5D1B5"
+        class="hex"
+      />
+      <path
+        d="M648 1430L709.819 1474.91L686.206 1547.59H609.794L586.181 1474.91L648 1430Z"
+        fill="#A5D1B5"
+        class="hex"
+      />
+      <path
+        d="M862 361L923.819 405.914L900.206 478.586H823.794L800.181 405.914L862 361Z"
+        fill="#A5D1B5"
+        class="hex"
+      />
+      <path
+        d="M430 578L491.819 622.914L468.206 695.586H391.794L368.181 622.914L430 578Z"
+        fill="#A5D1B5"
+        class="hex"
+      />
+      <path
+        d="M862 158L914.828 263H809.172L862 158Z"
+        fill="#6989A8"
+        class="triangle"
+      />
+      <path
+        d="M216 158L238.768 187.663L274.014 200.15L252.839 230.97L251.855 268.35L216 257.735L180.145 268.35L179.161 230.97L157.986 200.15L193.232 187.663L216 158Z"
+        fill="#FEB1BB"
+        class="star"
+      />
+      <path
+        d="M648 1009L670.768 1038.66L706.014 1051.15L684.839 1081.97L683.855 1119.35L648 1108.74L612.145 1119.35L611.161 1081.97L589.986 1051.15L625.232 1038.66L648 1009Z"
+        fill="#FEB1BB"
+        class="star"
+      />
+      <path
+        d="M862 1648L884.768 1677.66L920.014 1690.315L898.839 1720.97L897.855 1758.35L862 1747.74L826.145 1758.35L825.161 1720.97L803.986 1690.15L839.232 1677.66L862 1648Z"
+        fill="#FEB1BB"
+        class="star"
+      />
+      <path
+        d="M216 1434L238.768 1463.66L274.014 1476.15L252.839 1506.97L251.855 1544.35L216 1533.74L180.145 1544.35L179.161 1506.97L157.986 1476.15L193.232 1463.66L216 1434Z"
+        fill="#FEB1BB"
+        class="star"
+      />
+      <path
+        d="M648 582L670.768 611.663L706.014 624.15L684.839 654.97L683.855 692.35L648 681.735L612.145 692.35L611.161 654.97L589.986 624.15L625.232 611.663L648 582Z"
+        fill="#FEB1BB"
+        class="star"
+      />
+      <path
+        d="M862 1222L923.819 1266.91L900.206 1339.59H823.794L800.181 1266.91L862 1222Z"
+        fill="#A5D1B5"
+        class="hex"
+      />
+      <path
+        d="M216 1004L277.819 1048.91L254.206 1121.59H177.794L154.181 1048.91L216 1004Z"
+        fill="#A5D1B5"
+        class="hex"
+      />
+    </svg>
+
+    <script src="./tone.min.js"></script>
+    <script type="module" src="/app.js"></script>
+  </body>
+</html>
