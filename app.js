@@ -11,9 +11,6 @@ class App {
   constructor() {
     const synth = new Tone.Synth().toDestination();
     this.svg = document.querySelector("svg");
-
-    console.log(this.svg);
-
     this.svg.addEventListener("click", (e) => {
       let className = e.target.className.baseVal;
       switch (className) {
@@ -41,8 +38,6 @@ class App {
       }
     });
   }
-
-  handleMouseEvent() {}
 }
 
 new App();
